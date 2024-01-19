@@ -7,16 +7,19 @@ const Navigation = () => {
   const headingStyle = {
     
     padding: '20px 5px',
-    borderBottom:'2px solid black',
+    borderBottom:'2px solid DarkSlateGrey',
     paddingBottom: '10px',
-    fontWeight: 'bold',
+    fontWeight: '600',
     marginBottom: '10px', 
-    fontWeight: 'bold',
-    fontSize: '2em',
+    fontSize: '1em',
+    color:'DarkSlateGrey',
     
   };
   const containerStyle = {
     display: 'inline-block',
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', // Greyish transparent color
+    padding: '40px', // Optional: Add padding to create space between the text and the box
+    borderRadius: '10px', //
   };
 
   return (
@@ -29,8 +32,8 @@ const Navigation = () => {
                 </Link>
           </li>
           <li style={headingStyle}>
-        <Link to='/contacts'>
-                 Contact
+        <Link to='/services'>
+                 Services
                 </Link>
           </li>
           <li style={headingStyle}>
@@ -39,8 +42,8 @@ const Navigation = () => {
                 </Link>
           </li>
           <li style={headingStyle}>
-        <Link to='/services'>
-                 Services
+        <Link to='/contacts'>
+                 Contact
                 </Link>
           </li>
         
