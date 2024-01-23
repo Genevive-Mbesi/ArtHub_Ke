@@ -53,7 +53,7 @@ const Contacts = React.forwardRef ((props,ref) => {
     <div style={bodyStyle}>
     <img src={assets} alt ='profile image'className='w-80 h-30 overflow-hidden container' style={profileimage} />
     <h1 style={content}>To Choose From Our Endless designs<br></br> 
-    <span className='text-gray-500'><a href= 'https://www.instagram.com/genevivembesi?igsh=OHk4bmZrb3RkcjVy' >click here </a></span>
+    <span className='text-gray-500'><a href= 'https://www.instagram.com/genevivembesi?igsh=OHk4bmZrb3RkcjVy' >click here, </a></span>
     <br></br> Request your own custom made designs<br></br><span className='text-gray-500'>Contact us below:</span></h1>
     <h2 className='flex gap-5 text-3xl  pt-10'style={subcontent}>
     <a href= 'https://www.instagram.com/genevivembesi?igsh=OHk4bmZrb3RkcjVy'>
