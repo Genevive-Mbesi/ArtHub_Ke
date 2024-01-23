@@ -1,4 +1,5 @@
-import React from 'react';import { Routes, Route } from "react-router-dom";
+import React, { useRef } from 'react';
+import { Routes, Route } from "react-router-dom";
 import  Home from "./components/home";
 import Navigation from './components/navigationbar';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -8,23 +9,26 @@ import Listings from './components/listings';
 import Profile from './components/profile';
 
 function App() {
+  const nodeRef = useRef(null);
+
   return (
-    <div className='min-h-screen'>
+    <div className="min-h-screen">
     <Routes>
-    <Route
-      path="/"
-      element={
-        <TransitionGroup>
-          <CSSTransition
-            key="home"
-            timeout={450}
-            classNames="fade"
-          >
-            <Home />
-          </CSSTransition>
-        </TransitionGroup>
-      }
-    />
+      <Route
+        path="/"
+        element={
+          <TransitionGroup>
+            <CSSTransition
+              key="home"
+              timeout={450}
+              classNames="fade"
+              nodeRef={nodeRef}
+            >
+              <Home ref={nodeRef} />
+            </CSSTransition>
+          </TransitionGroup>
+        }
+      />
      <Route
       path="/profile"
       element={
@@ -33,8 +37,9 @@ function App() {
             key="profile"
             timeout={450}
             classNames="fade"
+            nodeRef={nodeRef}
           >
-            <Profile />
+            <Profile ref={nodeRef} />
           </CSSTransition>
         </TransitionGroup>
       }
@@ -47,8 +52,9 @@ function App() {
             key="services"
             timeout={450}
             classNames="fade"
+            nodeRef={nodeRef}
           >
-            <Services />
+            <Services ref={nodeRef} />
           </CSSTransition>
         </TransitionGroup>
       }
@@ -61,8 +67,9 @@ function App() {
             key="navigationbar"
             timeout={450}
             classNames="fade"
+            nodeRef={nodeRef}
           >
-            <Navigation />
+            <Navigation ref={nodeRef}/>
           </CSSTransition>
         </TransitionGroup>
       }
@@ -75,8 +82,9 @@ function App() {
             key="listings"
             timeout={450}
             classNames="fade"
+            nodeRef={nodeRef}
           >
-            <Listings />
+            <Listings ref={nodeRef} />
           </CSSTransition>
         </TransitionGroup>
       }
@@ -89,8 +97,9 @@ function App() {
             key="contacts"
             timeout={450}
             classNames="fade"
+            nodeRef={nodeRef}
           >
-            <Contacts />
+            <Contacts ref={nodeRef} />
           </CSSTransition>
         </TransitionGroup>
       }

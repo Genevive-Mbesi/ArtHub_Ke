@@ -5,7 +5,6 @@ const Navigation = () => {
   
 
   const headingStyle = {
-    
     padding: '20px 5px',
     borderBottom:'2px solid DarkSlateGrey',
     paddingBottom: '10px',

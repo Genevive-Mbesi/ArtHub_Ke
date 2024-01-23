@@ -2,7 +2,8 @@ import React from 'react';
 import assets from '../assets/cover.png';
 import Navigation from './navigationbar';
 
-const Home = () => {
+const Home = React.forwardRef ((props,ref) => {
+
   const bodyStyle = {
     backgroundImage: `url(${assets})`,
     backgroundRepeat: 'no-repeat',
@@ -20,9 +21,9 @@ const Home = () => {
     fontSize: '3em',
     color:'White',
     paddingTop: '10px',
-    position: 'absolute', // Position the text absolutely within the container
+    position: 'absolute', 
     top: '20%',
-    left: '50%', // Center it horizontally within the container
+    left: '50%', 
    transform: 'translateX(-50%)',
    fontFamily: '  Georgia,serif',
    
@@ -32,21 +33,23 @@ const Home = () => {
     fontSize: '2em',
     color:'rgba(169, 169, 169, 0.9)', 
     paddingTop: '10px',
-    position: 'absolute', // Position the text absolutely within the container
+    position: 'absolute', 
     top: '30%',
-    left: '50%', // Center it horizontally within the container
+    left: '50%',
    transform: 'translateX(-50%)',
    fontFamily: '  Georgia,serif',
    
   };
 
   return (
-    <body style={bodyStyle}>
+    <div ref={ref} >
+    <div style={bodyStyle}>
     <Navigation/>  
     <h1 style={heading}>MbesiArt</h1>
     <h1 style={subheading}>Your affordable Wall Decor designs</h1>
-    </body>
+    </div>
+    </div>
   );
-};
+});
 
 export default Home;
