@@ -119,7 +119,7 @@ const Services = React.forwardRef ((props,ref) => {
     <img src={customize} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={profileimage} />
     <h1 style={subcontent}>Wall Art customization</h1>
     <img src={personalize} alt ='personalized'className='w-80 h-30 overflow-hidden container' style={personal} />
-    <h1 style={content}>Space personalization</h1>
+    <h1 style={content}>Framed directives</h1>
     <img src={office} alt ='office image'className='w-80 h-30 overflow-hidden container' style={officeImage} />
     <h1 style={officecontent}>Office space wall designs</h1>
     <img src={vibrance} alt ='thought wall'className='w-80 h-30 overflow-hidden container' style={vibrantimage} />

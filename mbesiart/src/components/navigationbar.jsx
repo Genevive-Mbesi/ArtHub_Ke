@@ -37,7 +37,7 @@ const Navigation = () => {
           </li>
           <li style={headingStyle}>
         <Link to='/listings'>
-                 Listings
+                 Team
                 </Link>
           </li>
           <li style={headingStyle}>
