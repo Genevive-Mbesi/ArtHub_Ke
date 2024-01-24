@@ -5,7 +5,6 @@ import assets from '../assets/profile.jpg';
 const Profile = React.forwardRef ((props,ref) => {
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
-    backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     margin: 0,
