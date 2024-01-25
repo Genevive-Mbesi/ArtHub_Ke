@@ -1,6 +1,6 @@
 import React from 'react';
 import assets from '../assets/designs.png';
-import{AiFillInstagram,AiFillMail}from'react-icons/ai';
+import{AiFillInstagram,AiFillMail,AiOutlineWhatsApp}from'react-icons/ai';
 import Footer from './footer';
 
 
@@ -58,6 +58,7 @@ const Contacts = React.forwardRef ((props,ref) => {
     <span className='text-gray-500'><a href= 'https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy'> click here, </a></span>
     <br></br> Request your own custom made designs<br></br><span className='text-gray-500'>Contact us below:</span></h1>
     <h2 className='flex gap-5 text-3xl  pt-10'style={subcontent}>
+    <a href="https://wa.me/+254745052800" target="_blank"><AiOutlineWhatsApp/></a>
     <a href= 'https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy'>
           <AiFillInstagram/>
           </a>
