@@ -10,6 +10,8 @@ import think from '../assets/think.jpg';
 import thorny from '../assets/thorny.jpg';
 import wild from '../assets/wild.jpg';
 import cartoon from'../assets/cartoon.jpg';
+import Footer from './footer';
+
 
 
 const Home = React.forwardRef ((props,ref) => {
@@ -148,18 +150,18 @@ const Home = React.forwardRef ((props,ref) => {
     <Navigation/>  
     <h1 style={heading}>wall_art_heart</h1>
     <h1 style={subheading}>Home of affordable Wall Decor</h1>
-    <img src={abstract} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={abstractpic} />
-    <img src={african} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={africanpic} />
-    <img src={cartoon} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={cartoonpic} />
-    <img src={crazycouple} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={crazypic} />
-    <img src={flowergirl} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={flowerpic} />
-    <img src={meditation} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={meditationpic} />
-    <img src={mr} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={mrpic} />
-    <img src={think} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={thinkpic}/>
-    <img src={thorny} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={thornypic} />
-    <img src={wild} alt ='customized image'className='w-80 h-30 overflow-hidden container' style={wildpic} />
-
+    <img src={abstract} alt ='abstract'className='w-80 h-30 overflow-hidden container' style={abstractpic} />
+    <img src={african} alt ='african'className='w-80 h-30 overflow-hidden container' style={africanpic} />
+    <img src={cartoon} alt ='cartoon'className='w-80 h-30 overflow-hidden container' style={cartoonpic} />
+    <img src={crazycouple} alt ='crazy couple'className='w-80 h-30 overflow-hidden container' style={crazypic} />
+    <img src={flowergirl} alt ='flower'className='w-80 h-30 overflow-hidden container' style={flowerpic} />
+    <img src={meditation} alt ='meditation'className='w-80 h-30 overflow-hidden container' style={meditationpic} />
+    <img src={mr} alt ='mr&mrs'className='w-80 h-30 overflow-hidden container' style={mrpic} />
+    <img src={think} alt ='think'className='w-80 h-30 overflow-hidden container' style={thinkpic}/>
+    <img src={thorny} alt ='thorny'className='w-80 h-30 overflow-hidden container' style={thornypic} />
+    <img src={wild} alt ='wild'className='w-80 h-30 overflow-hidden container' style={wildpic} />
     </div>
+    <Footer/>
     </div>
    
   );

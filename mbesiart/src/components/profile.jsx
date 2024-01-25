@@ -50,7 +50,7 @@ const Profile = React.forwardRef ((props,ref) => {
   return(
   <div ref={ref}>
     <div style={bodyStyle}>
-    <img src={assets} alt ='profile image'className='w-80 h-30 overflow-hidden container' style={profileimage} />
+    <img src={assets} alt ='profile'className='w-80 h-30 overflow-hidden container' style={profileimage} />
     <h1 style={content}>WALLS THAT MAKE <br></br> YOU WANT TO STAY</h1>
     <h2 style={subcontent}>Our special designed Wall Art are created to<br></br> 
     especially give you an intune feeling with your environment<br></br> whether

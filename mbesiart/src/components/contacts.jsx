@@ -1,6 +1,8 @@
 import React from 'react';
 import assets from '../assets/designs.png';
-import{AiFillInstagram,AiFillMail}from'react-icons/ai'
+import{AiFillInstagram,AiFillMail}from'react-icons/ai';
+import Footer from './footer';
+
 
 
 const Contacts = React.forwardRef ((props,ref) => {
@@ -64,6 +66,7 @@ const Contacts = React.forwardRef ((props,ref) => {
           </a>
     </h2>
   </div> 
+  <Footer/>
 </div>
   );
 }) ;

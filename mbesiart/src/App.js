@@ -7,6 +7,7 @@ import Contacts from './components/contacts';
 import Services from './components/services';
 import Listings from './components/listings';
 import Profile from './components/profile';
+import Footer from './components/footer';
 
 function App() {
   const nodeRef = useRef(null);
@@ -104,7 +105,23 @@ function App() {
         </TransitionGroup>
       }
     />
+     <Route
+      path="/footer"
+      element={
+        <TransitionGroup>
+          <CSSTransition
+            key="footer"
+            timeout={450}
+            classNames="fade"
+            nodeRef={nodeRef}
+          >
+            <Footer ref={nodeRef} />
+          </CSSTransition>
+        </TransitionGroup>
+      }
+    />
   </Routes>
+  
 </div>
 );
 }
