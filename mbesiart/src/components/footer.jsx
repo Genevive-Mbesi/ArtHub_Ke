@@ -24,18 +24,18 @@ const Footer = React.forwardRef ((props,ref) => {
       <div>
         <ul className=' flex justify-center pt-5'>
             <li className='mr-10 list-disc'>
-             <Link to='/profile'>
-              Profile
+             <Link to='/'>
+              Home
              </Link>
             </li>
             <li className='mr-10 list-disc'>
-             <Link to='/services'>
-             Services
+             <Link to='/profile'>
+             Profile
              </Link>
             </li>
             <li className='list-disc'>
-             <Link to='/contacts'>
-             Contacts
+             <Link to='/services'>
+             Services
              </Link>
             </li>
         </ul>

@@ -1,5 +1,6 @@
 import React from 'react';
 import assets from '../assets/profile.jpg';
+import Footer from './footer';
 
 
 const Profile = React.forwardRef ((props,ref) => {
@@ -58,6 +59,7 @@ const Profile = React.forwardRef ((props,ref) => {
      this as an elevator to your mood everytime<br></br>that sets the tone of  the room.
     </h2>
   </div> 
+  <Footer/>
 </div>
   );
 }) ;

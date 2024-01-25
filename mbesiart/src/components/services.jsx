@@ -3,6 +3,7 @@ import customize from '../assets/Customize.jpg';
 import personalize from '../assets/personalize.jpg';
 import office from '../assets/office.jpg';
 import vibrance from '../assets/vibrance.jpg';
+import Footer from './footer';
 
 
 const Services = React.forwardRef ((props,ref) => {
@@ -125,6 +126,7 @@ const Services = React.forwardRef ((props,ref) => {
     <img src={vibrance} alt ='thought wall'className='w-80 h-30 overflow-hidden container' style={vibrantimage} />
     <h1 style={vibrancecontent}>Image Framing</h1>
   </div> 
+  <Footer/>
 </div>
   );
 }) ;

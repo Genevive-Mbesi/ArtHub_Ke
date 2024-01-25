@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './footer';
 
 
 const Listings = React.forwardRef ((props,ref) => { 
@@ -43,6 +44,7 @@ const Listings = React.forwardRef ((props,ref) => {
      It speaks a lot about our world and our lives.</h1>
      <h1 style={myName}> Genevive Mbesi, CEO</h1>
     </div>
+    <Footer/>
     </div> 
   
   );
