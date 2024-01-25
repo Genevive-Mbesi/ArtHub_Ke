@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './navigationbar'
 import abstract from '../assets/abstarct.jpg';
 import african from '../assets/african.jpg';
@@ -15,6 +15,14 @@ import Footer from './footer';
 
 
 const Home = React.forwardRef ((props,ref) => {
+
+
+  const [showPrices, setShowPrices] = useState(false);
+
+  const togglePrices = () => {
+    setShowPrices(!showPrices);
+  };
+
 
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
@@ -144,6 +152,37 @@ const Home = React.forwardRef ((props,ref) => {
     objectFit: 'contain',
     };
 
+     const priceListStyle = {
+    position: 'absolute',
+    top: '126%',
+    left: '0',
+    width: '20%',
+    backgroundColor: 'lightgray',
+    padding: '10px',
+    textAlign: 'center',
+    cursor: 'pointer',
+    paddingBottom: '10px',
+    fontWeight: '600',
+    marginBottom: '10px', 
+    fontSize: '1em',
+    color:'DarkSlateGrey',
+    left: '50%', 
+  };
+  const priceDisplay = {
+    backgroundColor: 'lightgray',
+    textAlign: 'center',
+    fontWeight: '300',
+    fontSize: '1em',
+    color:'DarkSlateGrey',
+    width: '20%',
+    position: 'absolute',
+    top: '132%',
+    left: '50%', 
+    
+
+  };
+
+
   return (
     <div ref={ref} >
     <div style={bodyStyle}>
@@ -161,6 +200,20 @@ const Home = React.forwardRef ((props,ref) => {
     <img src={thorny} alt ='thorny'className='w-80 h-30 overflow-hidden container' style={thornypic} />
     <img src={wild} alt ='wild'className='w-80 h-30 overflow-hidden container' style={wildpic} />
     </div>
+    
+      {/* Button to toggle price display */}
+      <div style={priceListStyle} onClick={togglePrices}>
+        {showPrices ? 'Hide Prices' : 'Click to display Price List'}
+      </div>
+    {/* Display prices when showPrices is true */}
+    {showPrices && (
+        <div style={priceDisplay }>
+          <p>A3 - Ksh 1550</p>
+          <p>A4 - Ksh 550</p>
+          <p>A5 - Ksh 450</p>
+          <p>A6 - Ksh 300</p>
+        </div>
+      )}
     <Footer/>
     </div>
    
