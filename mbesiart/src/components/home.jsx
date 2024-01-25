@@ -32,8 +32,8 @@ const Home = React.forwardRef ((props,ref) => {
     height: '150vh',
     display: 'flex',
     alignItems: 'center',
-    
   };
+  
   const heading = {
     fontWeight: '300', 
     fontSize: '3em',
@@ -44,8 +44,8 @@ const Home = React.forwardRef ((props,ref) => {
     left: '50%', 
    transform: 'translateX(-50%)',
    fontFamily: '  Georgia,serif',
-   
   };
+
   const subheading = {
     fontWeight: '300', 
     fontSize: '2em',
@@ -56,8 +56,8 @@ const Home = React.forwardRef ((props,ref) => {
     left: '50%',
    transform: 'translateX(-50%)',
    fontFamily: '  Georgia,serif',
-   
   };
+
   const abstractpic = {
     position: 'absolute', 
     top: '42%',
@@ -65,8 +65,8 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
   };
+
   const africanpic = {
     position: 'absolute', 
     top: '42%',
@@ -74,7 +74,6 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
   };
 
   const cartoonpic = {
@@ -84,7 +83,6 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
   };
 
   const crazypic = {
@@ -94,7 +92,6 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
   };
 
   const flowerpic = {
@@ -104,8 +101,8 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
   };
+
   const meditationpic = {
     position: 'absolute', 
     top: '84%',
@@ -113,9 +110,8 @@ const Home = React.forwardRef ((props,ref) => {
     width: '200px', // Set the desired width
     height: '200px',
     objectFit: 'contain',
-    
-    
   };
+
   const mrpic = {
     position: 'absolute', 
     top: '84%',
@@ -124,6 +120,7 @@ const Home = React.forwardRef ((props,ref) => {
     height: '200px',
     objectFit: 'contain', 
   };
+
   const thinkpic = {
     position: 'absolute', 
     top: '84%',
@@ -142,7 +139,6 @@ const Home = React.forwardRef ((props,ref) => {
     objectFit: 'contain',
   };
 
-  
   const wildpic = {
     position: 'absolute', 
     top: '84%',
@@ -168,6 +164,7 @@ const Home = React.forwardRef ((props,ref) => {
     color:'DarkSlateGrey',
     left: '50%', 
   };
+
   const priceDisplay = {
     backgroundColor: 'lightgray',
     textAlign: 'center',
@@ -178,10 +175,7 @@ const Home = React.forwardRef ((props,ref) => {
     position: 'absolute',
     top: '132%',
     left: '50%', 
-    
-
   };
-
 
   return (
     <div ref={ref} >
