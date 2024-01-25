@@ -42,7 +42,7 @@ const Navigation = () => {
           </li>
           <li style={headingStyle}>
         <Link to='/contacts'>
-                 Contact
+                 Contacts
                 </Link>
           </li>
           <li style={headingStyle}>
