@@ -33,7 +33,7 @@ const Home = React.forwardRef ((props,ref) => {
     display: 'flex',
     alignItems: 'center',
   };
-  
+
   const heading = {
     fontWeight: '300', 
     fontSize: '3em',
