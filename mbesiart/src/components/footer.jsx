@@ -33,11 +33,16 @@ const Footer = React.forwardRef ((props,ref) => {
              Profile
              </Link>
             </li>
-            <li className='list-disc'>
+            <li className='mr-10 list-disc'>
              <Link to='/services'>
              Services
              </Link>
             </li>
+            <li className='list-disc'>
+             <Link to='/contacts'>
+             Contacts
+             </Link>
+            </li> 
         </ul>
       </div>
       <p className=' flex justify-center pt-5'>genmbesi@gmail.com | &copy; {currentYear}</p>
