@@ -46,7 +46,7 @@ const Home = React.forwardRef((props, ref) => {
 
   const subheading = {
     fontWeight: '300',
-    fontSize: '2em',
+    fontSize: 'em',
     color: 'MintCream',
     paddingTop: '10px',
     fontFamily: 'Georgia, serif',
