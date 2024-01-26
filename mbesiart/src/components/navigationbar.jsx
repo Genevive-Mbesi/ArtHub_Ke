@@ -1,7 +1,13 @@
-import React from 'react';
+import React, {useState } from 'react';
 import {Link} from "react-router-dom";
 
 const Navigation = () => {
+
+  const [showPrices, setShowPrices] = useState(false);
+
+  const togglePrices = () => {
+    setShowPrices(!showPrices);
+  };
   
 
   const headingStyle = {
@@ -48,7 +54,22 @@ const Navigation = () => {
           <li style={headingStyle}>
           <a href= 'https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy'> Designs </a>
           </li>
-        
+        <li>
+        {/* Button to toggle price display */}
+           <div style={headingStyle} onClick={togglePrices}>
+            {showPrices ? 'Hide Prices' : 'Price List'}
+          </div>
+
+          {/* Display prices when showPrices is true */}
+          {showPrices && (
+            <div style={headingStyle}>
+              <p>A3 - Ksh 1550</p>
+              <p>A4 - Ksh 550</p>
+              <p>A5 - Ksh 450</p>
+              <p>A6 - Ksh 300</p>
+            </div>
+          )}
+          </li>
         </ul>
       </nav>
     
