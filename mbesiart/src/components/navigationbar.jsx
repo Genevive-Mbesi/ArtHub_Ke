@@ -18,6 +18,7 @@ const Navigation = () => {
     marginBottom: '10px', 
     fontSize: '1em',
     color:'DarkSlateGrey',
+    cursor: 'pointer',
     
   };
   const containerStyle = {
