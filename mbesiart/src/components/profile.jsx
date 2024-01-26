@@ -2,66 +2,61 @@ import React from 'react';
 import assets from '../assets/profile.jpg';
 import Footer from './footer';
 
-
-const Profile = React.forwardRef ((props,ref) => {
+const Profile = React.forwardRef((props, ref) => {
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     margin: 0,
     padding: 0,
-    height: '100vh',
+    minHeight: '100vh', // Using minHeight to ensure the content is centered vertically
+    display: 'flex',
+    flexDirection: 'column',
     alignItems: 'center',
+    justifyContent: 'center',
   };
 
   const profileimage = {
-    position: 'absolute', 
-    top: '30%',
-    left: '50%',
-    marginLeft: '100px',
-    width: '460px', // Set the desired width
+    width: '400px', // Set the desired width
     height: 'auto',
     objectFit: 'cover',
+    marginBottom: '20px', // Added margin for spacing
   };
 
   const content = {
     fontWeight: '600',
-    marginBottom: '5px', 
+    marginBottom: '5px',
     fontSize: '2em',
-    color:'DarkSlateGrey',
-    fontFamily: '  Georgia,serif',
-    marginLeft:'50px',
-    position: 'absolute', 
-    top: '37%',
+    color: 'DarkSlateGrey',
+    fontFamily: 'Georgia, serif',
+    textAlign: 'center', // Center text for responsiveness
   };
 
   const subcontent = {
     paddingBottom: '10px',
     fontWeight: '600',
-    marginBottom: '5px', 
+    marginBottom: '5px',
     fontSize: '1em',
-    color:'DarkSlateGrey',
-    fontFamily: '  Georgia,serif',
-    marginLeft:'50px',
-    alignItems: 'center',
-    position: 'absolute', 
-    top: '55%',
+    color: 'DarkSlateGrey',
+    fontFamily: 'Georgia, serif',
+    textAlign: 'center', // Center text for responsiveness
   };
-  
-  return(
-  <div ref={ref}>
-    <div style={bodyStyle}>
-    <img src={assets} alt ='profile'className='w-80 h-30 overflow-hidden container' style={profileimage} />
-    <h1 style={content}>WALLS THAT MAKE <br></br> YOU WANT TO STAY</h1>
-    <h2 style={subcontent}>Our special designed Wall Art are created to<br></br> 
-    especially give you an intune feeling with your environment<br></br> whether
-     at home, office, leisure time or hosting special events,<br></br>think of 
-     this as an elevator to your mood everytime<br></br>that sets the tone of  the room.
-    </h2>
-  </div> 
-  <Footer/>
-</div>
+
+  return (
+    <div ref={ref}>
+      <div style={bodyStyle}>
+        <img src={assets} alt="profile" className='w-80 h-30 overflow-hidden container' style={profileimage} />
+        <h1 style={content}>WALLS THAT MAKE <br /> YOU WANT TO STAY</h1>
+        <h2 style={subcontent}>Our specially designed Wall Art is created to<br />
+          especially give you an in-tune feeling with your environment<br />
+          whether at home, office, leisure time, or hosting special events,<br />
+          think of this as an elevator to your mood every time<br />
+          that sets the tone of the room.
+        </h2>
+      </div>
+      <Footer />
+    </div>
   );
-}) ;
+});
 
 export default Profile;

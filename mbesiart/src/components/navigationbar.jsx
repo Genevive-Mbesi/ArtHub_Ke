@@ -6,7 +6,7 @@ const Navigation = () => {
 
   const headingStyle = {
     padding: '20px 5px',
-    borderBottom:'2px solid DarkSlateGrey',
+    borderBottom:'1px solid DarkSlateGrey',
     paddingBottom: '10px',
     fontWeight: '600',
     marginBottom: '10px', 
@@ -16,9 +16,9 @@ const Navigation = () => {
   };
   const containerStyle = {
     display: 'inline-block',
-    backgroundColor: 'rgba(169, 169, 169, 0.5)', // Greyish transparent color
-    padding: '40px', // Optional: Add padding to create space between the text and the box
-    borderRadius: '10px', //
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
+    padding: '40px', 
+    borderRadius: '10px', 
   };
 
   return (
