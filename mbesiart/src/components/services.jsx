@@ -4,6 +4,7 @@ import personalize from '../assets/personalize.jpg';
 import office from '../assets/office.jpg';
 import vibrance from '../assets/vibrance.jpg';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 const Services = React.forwardRef((props, ref) => {
   const bodyStyle = {
@@ -17,8 +18,7 @@ const Services = React.forwardRef((props, ref) => {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center', // Center content vertically
-    alignItems: 'center', 
+    justifyContent: 'center', 
   };
 
   const contentContainer = {
@@ -54,14 +54,33 @@ const Services = React.forwardRef((props, ref) => {
     marginBottom: '10px',
     borderBottom: '2px solid DarkSlateGrey',
   };
+  const itemStyle = {
+    padding: '5px',
+    marginBottom: '10px',
+    color: 'DarkSlateGrey',
+    cursor: 'pointer',
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
+    borderRadius: '10px',
+    margin: '3%', 
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Georgia, serif',
+    
+  };
+
 
   return (
     <div ref={ref}>
       <div style={bodyStyle}>
+      <h1 style={itemStyle}>
+          <Link to="/">
+            wall_art_heart
+          </Link>
+        </h1>
         <h1 style={heading}>What We Offer</h1>
         <div style={contentContainer}>
           <div>
-            <img src={customize} alt="customized image" style={imageStyle} />
+            <img src={customize} alt="customized" style={imageStyle} />
             <h1 style={subcontent}>Wall Art customization</h1>
           </div>
           <div>
@@ -69,7 +88,7 @@ const Services = React.forwardRef((props, ref) => {
             <h1 style={subcontent}>Framed directives</h1>
           </div>
           <div>
-            <img src={office} alt="office image" style={imageStyle} />
+            <img src={office} alt="office" style={imageStyle} />
             <h1 style={subcontent}>Office space wall designs</h1>
           </div>
           <div>

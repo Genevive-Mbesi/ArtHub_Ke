@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 const Listings = React.forwardRef((props, ref) => {
   const bodyStyle = {
@@ -33,10 +34,29 @@ const Listings = React.forwardRef((props, ref) => {
     textAlign: 'center', // Center text for responsiveness
     fontFamily: 'Georgia, serif',
   };
+  const itemStyle = {
+    padding: '5px',
+    marginBottom: '10px',
+    color: 'DarkSlateGrey',
+    cursor: 'pointer',
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
+    borderRadius: '10px',
+    margin: '3%', 
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'Georgia, serif',
+    
+  };
+
 
   return (
     <div ref={ref}>
       <div style={bodyStyle}>
+      <h1 style={itemStyle}>
+          <Link to="/">
+            wall_art_heart
+          </Link>
+        </h1>
         <h1 style={subheading}>Art is a friendly way of expressing our imagination,<br></br>
           It speaks a lot about our world and our lives.
         </h1>

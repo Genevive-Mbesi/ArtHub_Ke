@@ -10,6 +10,7 @@ import thorny from '../assets/thorny.jpg';
 import wild from '../assets/wild.jpg';
 import cartoon from '../assets/cartoon.jpg';
 import Services from './services';
+import crazycouple from '../assets/crazycouple.jpg'
 
 const Home = React.forwardRef((props, ref) => {
  
@@ -56,10 +57,6 @@ const Home = React.forwardRef((props, ref) => {
     display: 'flex',
     justifyContent: 'flex-start',
     flexWrap: 'wrap',
-    
-  };
-  const navContainer = {
-    display: 'flex',
   };
 
   const imageStyle = {
@@ -73,10 +70,9 @@ const Home = React.forwardRef((props, ref) => {
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
+        <Navigation/>
           <h1 style={heading}>wall_art_heart</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
-          <div style={navContainer}>
-          <Navigation/>
           <div style={imageContainer}>
             <img src={abstract} alt="abstract" style={imageStyle} />
             <img src={african} alt="african" style={imageStyle} />
@@ -87,13 +83,13 @@ const Home = React.forwardRef((props, ref) => {
             <img src={think} alt="think" style={imageStyle} />
             <img src={thorny} alt="thorny" style={imageStyle} />
             <img src={wild} alt="wild" style={imageStyle} />
+            <img src={crazycouple} alt="crazy couple" style={imageStyle} />
           </div>
           </div>
         </div>
         <Services/>
 
       </div>
-    </div>
   );
 });
 
