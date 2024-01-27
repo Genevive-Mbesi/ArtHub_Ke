@@ -19,8 +19,8 @@ const Navigation = () => {
   };
 
   const itemStyle = {
-    padding: '5px',
-    marginBottom: '10px',
+    padding: '0.2rem',
+    marginBottom: '0.2rem',
     color: 'DarkSlateGrey',
     cursor: 'pointer',
     backgroundColor: 'rgba(169, 169, 169, 0.5)', 
@@ -32,16 +32,15 @@ const Navigation = () => {
 
   const containerStyle = {
     display: 'flex',
-    padding: '5px',
+    padding: '1rem',
     borderRadius: '10px',
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: '30px',
-    margin: '5px',
+    margin: '0',
   };
   const navStyle = {
     width: '100%',
-    maxWidth: '600px',
     marginLeft: 'auto',
     marginRight: 'auto',
   };
