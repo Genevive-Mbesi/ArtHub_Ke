@@ -25,10 +25,8 @@ const Navigation = () => {
     cursor: 'pointer',
     backgroundColor: 'rgba(169, 169, 169, 0.5)', 
     borderRadius: '10px',
-    margin: '5px', 
-    alignItems: 'center',
-    justifyContent: 'center',
     fontFamily: 'Georgia, serif',
+    margin:'2px',
     
   };
 
@@ -41,10 +39,16 @@ const Navigation = () => {
     paddingTop: '30px',
     margin: '5px',
   };
+  const navStyle = {
+    width: '100%',
+    maxWidth: '600px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+  };
   
 
   return (
-    <nav style={{ width: '80%', maxWidth: '600px', marginLeft: '50px' }}>
+    <nav style={navStyle}>
       <ul style={containerStyle}>
         <li style={itemStyle}>
           <Link to="/profile" style={headingStyle}>
