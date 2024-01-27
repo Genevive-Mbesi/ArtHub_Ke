@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './navigationbar';
 import abstract from '../assets/abstarct.jpg';
 import african from '../assets/african.jpg';
@@ -13,6 +13,12 @@ import Services from './services';
 import crazycouple from '../assets/crazycouple.jpg'
 
 const Home = React.forwardRef((props, ref) => {
+  const [showPrices, setShowPrices] = useState(false);
+
+  const togglePrices = () => {
+    setShowPrices(!showPrices);
+  };
+
  
   const containerStyle = {
     display: 'flex',
@@ -65,12 +71,39 @@ const Home = React.forwardRef((props, ref) => {
     objectFit: 'contain',
     margin: '10px',
   };
+  const itemStyle = {
+    padding: '0.2rem',
+    marginBottom: '0.2rem',
+    color: 'DarkSlateGrey',
+    cursor: 'pointer',
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
+    borderRadius: '10px',
+    fontFamily: 'Georgia, serif',
+    margin:'2px',
+    
+  };
  
   return (
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
         <Navigation/>
+        <h1>
+          {/* Button to toggle price display */}
+          <div style={itemStyle} onClick={togglePrices}>
+            {showPrices ? 'Hide Prices' : 'Prices'}
+          </div>
+
+          {/* Display prices when showPrices is true */}
+          {showPrices && (
+            <div style={itemStyle}>
+              <p>A3 - Ksh 1550</p>
+              <p>A4 - Ksh 550</p>
+              <p>A5 - Ksh 450</p>
+              <p>A6 - Ksh 300</p>
+            </div>
+          )}
+        </h1>
           <h1 style={heading}>wall_art_heart</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
           <div style={imageContainer}>
