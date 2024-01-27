@@ -34,6 +34,8 @@ const Home = React.forwardRef((props, ref) => {
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     minHeight: '100vh',
+    alignItems:'center',
+    justifyContent:'center',
   };
   const contentStyle = {
     display: 'flex',
@@ -61,8 +63,9 @@ const Home = React.forwardRef((props, ref) => {
 
   const imageContainer = {
     display: 'flex',
-    justifyContent: 'flex-start',
     flexWrap: 'wrap',
+    alignItems:'center',
+    justifyContent:'center',
   };
 
   const imageStyle = {
