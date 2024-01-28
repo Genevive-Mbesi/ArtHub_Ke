@@ -6,7 +6,6 @@ const Navigation = () => {
   const headingStyle = {
     padding: '10px',
     paddingBottom: '10px',
-    fontWeight: '300',
     marginBottom: '10px',
     color: 'DarkSlateGrey',
     cursor: 'pointer',

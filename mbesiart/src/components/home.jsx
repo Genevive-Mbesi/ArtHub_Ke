@@ -57,6 +57,7 @@ const Home = React.forwardRef((props, ref) => {
     color: 'MintCream',
     paddingTop: '10px',
     fontFamily: 'Georgia, serif',
+    fontSize: '20px',
   };
 
   const imageContainer = {
