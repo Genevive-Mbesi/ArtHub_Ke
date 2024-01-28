@@ -31,7 +31,7 @@ const Profile = React.forwardRef((props, ref) => {
     fontSize: '2em',
     color: 'DarkSlateGrey',
     fontFamily: 'Georgia, serif',
-    textAlign: 'center', 
+    textAlign: 'center', // Center text for responsiveness
   };
 
   const subcontent = {
@@ -54,7 +54,7 @@ const Profile = React.forwardRef((props, ref) => {
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'Georgia, serif',
-    
+    borderTop: '2px solid DarkSlateGrey',
   };
 
 

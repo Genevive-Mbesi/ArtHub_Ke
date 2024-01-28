@@ -45,6 +45,7 @@ const Listings = React.forwardRef((props, ref) => {
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'Georgia, serif',
+    borderTop: '2px solid DarkSlateGrey',
     
   };
 

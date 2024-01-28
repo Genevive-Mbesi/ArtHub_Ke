@@ -81,6 +81,7 @@ const Home = React.forwardRef((props, ref) => {
     borderRadius: '10px',
     fontFamily: 'Georgia, serif',
     margin:'2px',
+    borderTop: '2px solid DarkSlateGrey',
     
   };
  
