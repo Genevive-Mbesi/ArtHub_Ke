@@ -11,7 +11,7 @@ const Profile = React.forwardRef((props, ref) => {
     backgroundSize: 'cover',
     margin: 0,
     padding: 0,
-    minHeight: '100vh', // Using minHeight to ensure the content is centered vertically
+    minHeight: '100vh', 
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -19,10 +19,10 @@ const Profile = React.forwardRef((props, ref) => {
   };
 
   const profileimage = {
-    width: '400px', // Set the desired width
+    width: '400px', 
     height: 'auto',
     objectFit: 'cover',
-    marginBottom: '20px', // Added margin for spacing
+    marginBottom: '20px',
   };
 
   const content = {
@@ -31,7 +31,7 @@ const Profile = React.forwardRef((props, ref) => {
     fontSize: '2em',
     color: 'DarkSlateGrey',
     fontFamily: 'Georgia, serif',
-    textAlign: 'center', // Center text for responsiveness
+    textAlign: 'center', 
   };
 
   const subcontent = {
@@ -41,7 +41,7 @@ const Profile = React.forwardRef((props, ref) => {
     fontSize: '1em',
     color: 'DarkSlateGrey',
     fontFamily: 'Georgia, serif',
-    textAlign: 'center', // Center text for responsiveness
+    textAlign: 'center', 
   };
   const itemStyle = {
     padding: '5px',
@@ -63,7 +63,7 @@ const Profile = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            wall_art_heart
+            Home Page
           </Link>
         </h1>
         <img src={assets} alt="profile" className='w-80 h-30 overflow-hidden container' style={profileimage} />

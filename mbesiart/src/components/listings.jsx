@@ -54,7 +54,7 @@ const Listings = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            wall_art_heart
+            Home Page
           </Link>
         </h1>
         <h1 style={subheading}>Art is a friendly way of expressing our imagination,<br></br>

@@ -74,7 +74,7 @@ const Services = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            wall_art_heart
+            Home Page
           </Link>
         </h1>
         <h1 style={heading}>What We Offer</h1>

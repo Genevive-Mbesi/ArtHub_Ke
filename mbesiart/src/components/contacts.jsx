@@ -62,7 +62,7 @@ const Contacts = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            wall_art_heart
+            Home Page
           </Link>
         </h1>
         <img src={assets} alt='profile' className='w-80 h-30 overflow-hidden container' style={profileimage} />

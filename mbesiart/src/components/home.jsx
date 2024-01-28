@@ -46,7 +46,6 @@ const Home = React.forwardRef((props, ref) => {
   };
 
   const heading = {
-    fontWeight: '300',
     fontSize: '3em',
     color: 'DarkSlateGrey',
     paddingTop: '10px',
@@ -54,7 +53,6 @@ const Home = React.forwardRef((props, ref) => {
   };
 
   const subheading = {
-    fontWeight: '300',
     fontSize: 'em',
     color: 'MintCream',
     paddingTop: '10px',
