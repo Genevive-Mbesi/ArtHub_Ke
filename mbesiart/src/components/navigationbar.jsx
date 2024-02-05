@@ -85,6 +85,15 @@ const Navigation = () => {
           </a>
         </li>
       </ul>
+
+      {/* Render only on small screens */}
+      <div className={`lg:hidden ${showMenu ? "block" : "hidden"}`}>
+        <ul style={containerStyle}>
+          <li style={itemStyle}>
+            <AiOutlineMenu />
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
