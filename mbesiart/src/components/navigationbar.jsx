@@ -58,6 +58,7 @@ const Navigation = () => {
         } lg:flex lg:flex-row lg:items-center mt-2`}
         style={containerStyle}
       >
+        {/* Render only on large screens */}
         <li style={itemStyle}>
           <Link to="/profile" style={headingStyle}>
             Profile
