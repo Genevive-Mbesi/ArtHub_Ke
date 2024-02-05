@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Navigation = () => {
 
@@ -18,8 +19,7 @@ const Navigation = () => {
     color: 'DarkSlateGrey',
     cursor: 'pointer',
     fontFamily: 'Georgia, serif',
-    margin:'2px',
-    
+    margin: '2px',
   };
 
   const containerStyle = {
@@ -31,16 +31,33 @@ const Navigation = () => {
     paddingTop: '30px',
     margin: '5px',
   };
+  
   const navStyle = {
     width: '100%',
     marginLeft: 'auto',
     marginRight: 'auto',
+    textAlign: 'center', // Center the content
   };
-  
+
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
     <nav style={navStyle}>
-      <ul style={containerStyle}>
+      <h1 onClick={toggleMenu} className="cursor-pointer">
+        <AiOutlineMenu />
+      </h1>
+      <ul
+        className={`${
+          showMenu
+            ? "flex flex-col bg-teal-800 p-4 rounded-lg"
+            : "hidden"
+        } lg:flex lg:flex-row lg:items-center mt-2`}
+        style={containerStyle}
+      >
         <li style={itemStyle}>
           <Link to="/profile" style={headingStyle}>
             Profile
