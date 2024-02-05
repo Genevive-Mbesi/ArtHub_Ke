@@ -1,7 +1,14 @@
-import React from 'react';
+import React ,{ useState }from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineMenu } from "react-icons/ai";
+
 
 const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   const headingStyle = {
     padding: '10px',
@@ -40,7 +47,21 @@ const Navigation = () => {
 
   return (
     <nav style={navStyle}>
-      <ul style={containerStyle}>
+      <div className="lg:hidden lg:flex flex-col lg:items-center absolute top-8 right-4 mt-2">
+  
+  <h1 onClick={toggleMenu} className="cursor-pointer">
+    <AiOutlineMenu />
+  </h1>
+</div>
+      <ul 
+      className={`${
+        showMenu
+          ? "flex flex-col bg-teal-800 p-4 rounded-lg"
+          : "hidden"
+      } lg:flex lg:flex-row lg:items-center `}
+    
+    
+      style={containerStyle}>
         <li style={itemStyle}>
           <Link to="/profile" style={headingStyle}>
             Profile
