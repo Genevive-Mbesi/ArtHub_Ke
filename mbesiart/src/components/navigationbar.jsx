@@ -38,31 +38,29 @@ export default function Navbar() {
               : "hidden"
           } lg:flex lg:flex-row lg:items-center absolute top-12 right-4 text-s flex mt-2`}
         >
-          <li style={itemStyle} className="mb-4 lg:mr-6">
-            <Link to="/profile" className="py-2">
+          <li style={itemStyle}>
+            <Link to="/profile" >
               Profile
             </Link>
           </li>
-          <li style={itemStyle} className="mb-4 lg:mr-6">
-            <Link to="/services" className="py-2">
+          <li style={itemStyle}>
+            <Link to="/services">
               Services
             </Link>
           </li>
-          <li style={itemStyle}className="mb-4 lg:mr-6">
-            <Link to="/listings" className="py-2">
+          <li style={itemStyle}>
+            <Link to="/listings">
               Listings
             </Link>
           </li>
-          <li style={itemStyle}className="mb-4 lg:mr-6">
-            <Link to="/contacts" className="py-2">
+          <li style={itemStyle}>
+            <Link to="/contacts">
               Contacts
             </Link>
           </li>
-          <li style={itemStyle}className="mb-4">
+          <li style={itemStyle}>
             <a
-              href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy"
-              className="py-2"
-            >
+              href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy">
               Designs
             </a>
           </li>
