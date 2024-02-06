@@ -48,7 +48,7 @@ const Home = React.forwardRef((props, ref) => {
   const heading = {
     fontSize: '3em',
     color: 'DarkSlateGrey',
-    paddingTop: '10px',
+    paddingTop: '50px',
     fontFamily: 'Georgia, serif',
   };
 
@@ -57,7 +57,7 @@ const Home = React.forwardRef((props, ref) => {
     color: 'MintCream',
     paddingTop: '10px',
     fontFamily: 'Georgia, serif',
-    fontSize: '20px',
+    
   };
 
   const imageContainer = {
@@ -89,8 +89,9 @@ const Home = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
-        <div style={contentStyle}>
         <Navigation/>
+        <div style={contentStyle}>
+        
         <h1>
           {/* Button to toggle price display */}
           <div style={itemStyle} onClick={togglePrices}>

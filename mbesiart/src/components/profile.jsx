@@ -54,7 +54,6 @@ const Profile = React.forwardRef((props, ref) => {
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'Georgia, serif',
-    borderTop: '2px solid DarkSlateGrey',
   };
 
 
@@ -63,7 +62,7 @@ const Profile = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            Home Page
+            Home
           </Link>
         </h1>
         <img src={assets} alt="profile" className='w-80 h-30 overflow-hidden container' style={profileimage} />

@@ -65,7 +65,6 @@ const Services = React.forwardRef((props, ref) => {
     alignItems: 'center',
     justifyContent: 'center',
     fontFamily: 'Georgia, serif',
-    borderTop: '2px solid DarkSlateGrey',
   };
 
 
@@ -74,7 +73,7 @@ const Services = React.forwardRef((props, ref) => {
       <div style={bodyStyle}>
       <h1 style={itemStyle}>
           <Link to="/">
-            Home Page
+            Home
           </Link>
         </h1>
         <h1 style={heading}>What We Offer</h1>

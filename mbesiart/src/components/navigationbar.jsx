@@ -1,104 +1,73 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { AiOutlineMenu } from 'react-icons/ai';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
 
-const Navigation = () => {
+export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
-  const headingStyle = {
-    padding: '10px',
-    paddingBottom: '10px',
-    marginBottom: '10px',
-    color: 'DarkSlateGrey',
-    cursor: 'pointer',
-    fontFamily: 'Georgia, serif',
-  };
-
   const itemStyle = {
     padding: '0.2rem',
     marginBottom: '0.2rem',
     color: 'DarkSlateGrey',
     cursor: 'pointer',
-    fontFamily: 'Georgia, serif',
-    margin: '2px',
-  };
-
-  const containerStyle = {
-    display: 'flex',
-    padding: '0.2rem',
+    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
     borderRadius: '10px',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingTop: '30px',
-    margin: '5px',
+    fontFamily: 'Georgia, serif',
+    margin:'2px',
+    
+    
   };
-
-  // Function to handle window resize
-  const handleResize = () => {
-    setShowMenu(window.innerWidth <= 768); // Adjust the breakpoint as needed
-  };
-
-  // Add event listener on component mount
-  useEffect(() => {
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    // Remove event listener on component unmount
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+  
   return (
-    <nav>
-      {/* Menu bar for small screens */}
-      {showMenu && (
-        <div className="flex justify-end p-4">
-          <h1 onClick={toggleMenu} className="cursor-pointer">
-            <AiOutlineMenu />
-          </h1>
+    <div className="container items-center justify-center font-serif text-teal-800 text-s">
+      <nav className="">
+        <div className="flex items-center">
+          <div className="lg:hidden lg:flex flex-col lg:items-center absolute top-4 right-4">
+            <h1 onClick={toggleMenu} className="cursor-pointer">
+              <AiOutlineMenu />
+            </h1>
+          </div>
         </div>
-      )}
-
-      {/* Full navigation bar for larger screens */}
-      {!showMenu && (
-        <ul className="lg:flex lg:flex-row lg:items-center" style={containerStyle}>
-          <li className="mb-4 lg:mr-10" style={itemStyle}>
-            <Link to="/profile" style={headingStyle}>
+        <ul
+          className={`${
+            showMenu
+              ? "flex flex-col  font-serif lg:hidden p-4 rounded-lg"
+              : "hidden"
+          } lg:flex lg:flex-row lg:items-center absolute top-12 right-4 text-s flex mt-2`}
+        >
+          <li style={itemStyle} className="mb-4 lg:mr-6">
+            <Link to="/profile" className="py-2">
               Profile
             </Link>
           </li>
-          <li style={itemStyle}>
-            <Link to="/services" style={headingStyle}>
+          <li style={itemStyle} className="mb-4 lg:mr-6">
+            <Link to="/services" className="py-2">
               Services
             </Link>
           </li>
-          <li style={itemStyle}>
-            <Link to="/listings" style={headingStyle}>
-              Team
+          <li style={itemStyle}className="mb-4 lg:mr-6">
+            <Link to="/listings" className="py-2">
+              Listings
             </Link>
           </li>
-          <li style={itemStyle}>
-            <Link to="/contacts" style={headingStyle}>
+          <li style={itemStyle}className="mb-4 lg:mr-6">
+            <Link to="/contacts" className="py-2">
               Contacts
             </Link>
           </li>
-          <li style={itemStyle}>
+          <li style={itemStyle}className="mb-4">
             <a
               href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy"
-              style={headingStyle}
+              className="py-2"
             >
               Designs
             </a>
           </li>
         </ul>
-      )}
-    </nav>
+      </nav>
+    </div>
   );
-};
-
-export default Navigation;
+}
