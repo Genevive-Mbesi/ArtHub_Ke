@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineMenu } from 'react-icons/ai';
 
@@ -37,51 +37,66 @@ const Navigation = () => {
     margin: '5px',
   };
 
+  // Function to handle window resize
+  const handleResize = () => {
+    setShowMenu(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  };
+
+  // Add event listener on component mount
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <nav>
       {/* Menu bar for small screens */}
-      <div className="lg:hidden flex justify-end p-4">
-        <h1 onClick={toggleMenu} className="cursor-pointer">
-          <AiOutlineMenu />
-        </h1>
-      </div>
+      {showMenu && (
+        <div className="flex justify-end p-4">
+          <h1 onClick={toggleMenu} className="cursor-pointer">
+            <AiOutlineMenu />
+          </h1>
+        </div>
+      )}
 
       {/* Full navigation bar for larger screens */}
-      <ul
-        className={`${
-          showMenu ? 'flex flex-col bg-grey-800 p-4 rounded-lg' : 'hidden'
-        } lg:flex lg:flex-row lg:items-center `}
-        style={containerStyle}
-      >
-        <li className="mb-4 lg:mr-10" style={itemStyle}>
-          <Link to="/profile" style={headingStyle}>
-            Profile
-          </Link>
-        </li>
-        <li style={itemStyle}>
-          <Link to="/services" style={headingStyle}>
-            Services
-          </Link>
-        </li>
-        <li style={itemStyle}>
-          <Link to="/listings" style={headingStyle}>
-            Team
-          </Link>
-        </li>
-        <li style={itemStyle}>
-          <Link to="/contacts" style={headingStyle}>
-            Contacts
-          </Link>
-        </li>
-        <li style={itemStyle}>
-          <a
-            href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy"
-            style={headingStyle}
-          >
-            Designs
-          </a>
-        </li>
-      </ul>
+      {!showMenu && (
+        <ul className="lg:flex lg:flex-row lg:items-center" style={containerStyle}>
+          <li className="mb-4 lg:mr-10" style={itemStyle}>
+            <Link to="/profile" style={headingStyle}>
+              Profile
+            </Link>
+          </li>
+          <li style={itemStyle}>
+            <Link to="/services" style={headingStyle}>
+              Services
+            </Link>
+          </li>
+          <li style={itemStyle}>
+            <Link to="/listings" style={headingStyle}>
+              Team
+            </Link>
+          </li>
+          <li style={itemStyle}>
+            <Link to="/contacts" style={headingStyle}>
+              Contacts
+            </Link>
+          </li>
+          <li style={itemStyle}>
+            <a
+              href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy"
+              style={headingStyle}
+            >
+              Designs
+            </a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };
