@@ -56,13 +56,13 @@ const Navigation = () => {
       <ul 
       className={`${
         showMenu
-          ? "flex flex-col bg-teal-800 p-4 rounded-lg"
+          ? "flex flex-col bg-grey-800 p-4 rounded-lg"
           : "hidden"
       } lg:flex lg:flex-row lg:items-center `}
     
     
       style={containerStyle}>
-        <li style={itemStyle}>
+        <li className='mb-4 lg:mr-10'style={itemStyle}>
           <Link to="/profile" style={headingStyle}>
             Profile
           </Link>
