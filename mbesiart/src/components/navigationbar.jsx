@@ -37,19 +37,16 @@ const Navigation = () => {
     margin: '5px',
   };
 
-  const navStyle = {
-    width: '100%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-  };
-
   return (
-    <nav style={navStyle}>
-      <div className="lg:hidden lg:flex flex-col lg:items-center absolute top-8 right-4 mt-2">
+    <nav>
+      {/* Menu bar for small screens */}
+      <div className="lg:hidden flex justify-end p-4">
         <h1 onClick={toggleMenu} className="cursor-pointer">
           <AiOutlineMenu />
         </h1>
       </div>
+
+      {/* Full navigation bar for larger screens */}
       <ul
         className={`${
           showMenu ? 'flex flex-col bg-grey-800 p-4 rounded-lg' : 'hidden'
