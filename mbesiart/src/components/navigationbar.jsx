@@ -13,10 +13,10 @@ export default function Navbar() {
     marginBottom: '0.2rem',
     color: 'DarkSlateGrey',
     cursor: 'pointer',
-    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
     borderRadius: '10px',
     fontFamily: 'Georgia, serif',
     margin:'2px',
+    border: '1px solid DarkSlateGrey',
     
     
   };
