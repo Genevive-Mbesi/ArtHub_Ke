@@ -34,7 +34,7 @@ export default function Navbar() {
         <ul
           className={`${
             showMenu
-              ? "flex flex-col  font-serif lg:hidden p-4 rounded-lg"
+              ? "flex flex-col  font-serif bg-gray-100 lg:hidden p-4 rounded-lg"
               : "hidden"
           } lg:flex lg:flex-row lg:items-center absolute top-12 right-4 text-s flex mt-2`}
         >
