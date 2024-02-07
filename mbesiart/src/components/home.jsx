@@ -11,6 +11,9 @@ import wild from '../assets/wild.jpg';
 import cartoon from '../assets/cartoon.jpg';
 import Services from './services';
 import crazycouple from '../assets/crazycouple.jpg'
+import flowered from '../assets/flowered.jpg'
+import self from '../assets/self.jpg'
+
 import './base.css';
 
 const Home = React.forwardRef((props, ref) => {
@@ -134,8 +137,14 @@ const Home = React.forwardRef((props, ref) => {
                      <img src={african} alt='art-heart' />
                     <img src={wild} alt='art-heart' />
                      </div>
-                     <p>Abstract art</p>
-                   
+                     <p>African Heritage</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={flowered} alt='art-heart' />
+                    <img src={self} alt='art-heart' />
+                     </div>
+                     <p>flowered Abstract</p>
                    </h1>
                 </div>
             </div>
