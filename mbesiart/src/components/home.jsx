@@ -11,6 +11,7 @@ import wild from '../assets/wild.jpg';
 import cartoon from '../assets/cartoon.jpg';
 import Services from './services';
 import crazycouple from '../assets/crazycouple.jpg'
+import './base.css';
 
 const Home = React.forwardRef((props, ref) => {
   const [showPrices, setShowPrices] = useState(false);
@@ -60,19 +61,7 @@ const Home = React.forwardRef((props, ref) => {
     
   };
 
-  const imageContainer = {
-    display: 'flex',
-    flexWrap: 'wrap',
-    alignItems:'center',
-    justifyContent:'center',
-  };
-
-  const imageStyle = {
-    width: '200px',
-    height: '200px',
-    objectFit: 'contain',
-    margin: '10px',
-  };
+  
   const itemStyle = {
     padding: '0.2rem',
     marginBottom: '0.2rem',
@@ -110,18 +99,46 @@ const Home = React.forwardRef((props, ref) => {
         </h1>
           <h1 style={heading}>wall_art_heart</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
-          <div style={imageContainer}>
-            <img src={abstract} alt="abstract" style={imageStyle} />
-            <img src={african} alt="african" style={imageStyle} />
-            <img src={cartoon} alt="cartoon" style={imageStyle} />
-            <img src={flowergirl} alt="flower" style={imageStyle} />
-            <img src={meditation} alt="meditation" style={imageStyle} />
-            <img src={mr} alt="mr&mrs" style={imageStyle} />
-            <img src={think} alt="think" style={imageStyle} />
-            <img src={thorny} alt="thorny" style={imageStyle} />
-            <img src={wild} alt="wild" style={imageStyle} />
-            <img src={crazycouple} alt="crazy couple" style={imageStyle} />
-          </div>
+          <div className='sections-container'>
+                <div className='section-links'>
+                    <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={thorny} alt='art-heart' />
+                    <img src={abstract} alt='art-heart' />
+                     </div>
+                     <p>Abstract art</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={flowergirl} alt='art-heart' />
+                    <img src={think} alt='art-heart' />
+                     </div>
+                     <p>Word art</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={crazycouple} alt='art-heart' />
+                    <img src={mr} alt='art-heart' />
+                     </div>
+                     <p>Couples Edition</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={cartoon} alt='art-heart' />
+                    <img src={meditation} alt='art-heart' />
+                     </div>
+                     <p>Cartoon Art</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={african} alt='art-heart' />
+                    <img src={wild} alt='art-heart' />
+                     </div>
+                     <p>Abstract art</p>
+                   
+                   </h1>
+                </div>
+            </div>
           </div>
         </div>
         <Services/>
