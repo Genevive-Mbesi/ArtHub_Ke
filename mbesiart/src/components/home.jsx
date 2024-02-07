@@ -144,7 +144,7 @@ const Home = React.forwardRef((props, ref) => {
                      <img src={flowered} alt='art-heart' />
                     <img src={self} alt='art-heart' />
                      </div>
-                     <p>flowered Abstract</p>
+                     <p>Flowered Abstract</p>
                    </h1>
                 </div>
             </div>
