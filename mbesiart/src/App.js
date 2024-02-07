@@ -14,6 +14,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
+     <Navigation/>
     <Routes>
       <Route
         path="/"

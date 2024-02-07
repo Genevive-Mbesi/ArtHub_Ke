@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navigation from './navigationbar';
 import abstract from '../assets/abstarct.jpg';
 import african from '../assets/african.jpg';
 import flowergirl from '../assets/flowergirl.jpg';
@@ -81,7 +80,6 @@ const Home = React.forwardRef((props, ref) => {
   return (
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
-        <Navigation/>
         <div style={contentStyle}>
         
         <h1>
