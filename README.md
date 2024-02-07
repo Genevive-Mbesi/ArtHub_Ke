@@ -25,13 +25,13 @@ Wall Art Heart is an online art business dedicated to providing beautiful and af
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/wall-art-heart.git
+    git clone https://github.com/your-username/MbesiArt.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd wall-art-heart
+    cd MbesiArt
     ```
 
 3. Install dependencies:
