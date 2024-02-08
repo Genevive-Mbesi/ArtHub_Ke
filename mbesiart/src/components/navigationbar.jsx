@@ -16,21 +16,21 @@ export default function Navbar() {
   };
   const headingStyle = {
     backgroundColor: 'DarkSlateGrey',
-    color: 'Gainsboro',
     padding: '30px',
     fontFamily: '  Georgia,serif',
     color: 'white',
     cursor: 'pointer',
-    fontFamily: 'Georgia, serif',
     alignItems:'center',
     justifyContent:'center',
   };
+
+
   
   return (
     <div style={headingStyle} >
       <nav style={navContainer} >
         <div className="flex items-center">
-          <div className="lg:hidden lg:flex flex-col lg:items-center">
+          <div className="lg:hidden lg:flex flex-col lg:items-centerlg:items-center absolute top-8 right-4 mt-2 ">
             <h1 onClick={toggleMenu} className="cursor-pointer">
               <AiOutlineMenu />
             </h1>
@@ -39,7 +39,7 @@ export default function Navbar() {
         <ul
           className={`${
             showMenu
-              ? "flex flex-col  font-serif bg-gray-100 lg:hidden rounded-lg"
+              ? "flex flex-col  font-serif  lg:hidden p-2 lg:items-center absolute top-14 right-6 mt-2 z-10  "
               : "hidden"
           } lg:flex lg:flex-row lg:items-center flex`}
         >
