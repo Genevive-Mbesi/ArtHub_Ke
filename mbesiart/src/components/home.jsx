@@ -91,10 +91,10 @@ const Home = React.forwardRef((props, ref) => {
           {/* Display prices when showPrices is true */}
           {showPrices && (
             <div style={itemStyle}>
-              <p>A3 - Ksh 1550</p>
-              <p>A4 - Ksh 550</p>
-              <p>A5 - Ksh 450</p>
-              <p>A6 - Ksh 300</p>
+              <p>A3 - Ksh 1600</p>
+              <p>A4 - Ksh 600</p>
+              <p>A5 - Ksh 500</p>
+              <p>A6 - Ksh 350</p>
             </div>
           )}
         </h1>
