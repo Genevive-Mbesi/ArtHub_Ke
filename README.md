@@ -9,7 +9,7 @@ Wall Art Heart is Product Catalogue for an online art business. This website is 
 
 ## Features
 
-- **Customized Artwork:** Choose from a wide range of artwork and customize it to suit your taste and style.
+
 - **Pricing details:** We believe in making art accessible to everyone, offering affordable prices without compromising on quality.
 - **React-Powered Interface:** Enjoy a smooth and responsive user interface built with React for an enhanced browsing experience.
 - **Stylish Design:** Our website is designed with care, incorporating the modern and versatile styling of Tailwind CSS.
