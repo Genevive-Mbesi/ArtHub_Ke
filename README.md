@@ -1,11 +1,11 @@
 # MbesiArt
 ## Wall Art Heart
 
-Welcome to Wall Art Heart - Your Destination for Customized Framed Art!
+### Product Catalogue
 
 ## Overview
 
-Wall Art Heart is an online art business dedicated to providing beautiful and affordable customized framed art pieces that speak to the heart. Our website is built with React and styled with Tailwind CSS to ensure a seamless and visually appealing experience for our customers.
+Wall Art Heart is Product Catalogue for an online art business. This website is built on React and styled with Tailwind CSS to ensure a seamless and visually appealing experience for our customers.
 
 ## Features
 
