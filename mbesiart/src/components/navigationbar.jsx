@@ -63,12 +63,6 @@ export default function Navbar() {
               Contacts
             </Link>
           </li>
-          <li style={headingStyle}>
-            <a
-              href="https://www.instagram.com/wall_art_heart?igsh=OHk4bmZrb3RkcjVy">
-              Designs
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
