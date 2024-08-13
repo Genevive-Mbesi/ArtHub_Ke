@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import PriceList from '../assets/PriceList.png'
 
 const Listings = React.forwardRef((props, ref) => {
   const bodyStyle = {
@@ -15,6 +16,12 @@ const Listings = React.forwardRef((props, ref) => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center', // Center content vertically
+  };
+  const profileimage = {
+    width: '500px',
+    height: '500px',
+    objectFit: 'contain',
+    marginBottom: '20px', 
   };
 
   const subheading = {
@@ -57,10 +64,11 @@ const Listings = React.forwardRef((props, ref) => {
             Home 
           </Link>
         </h1>
+        <img src={PriceList} alt='Price List'style={profileimage} />
         <h1 style={subheading}>Art is a friendly way of expressing our imagination,<br></br>
           It speaks a lot about our world and our lives.
         </h1>
-        <h1 style={myName}>Genevive Mbesi, CEO</h1>
+        <h1 style={myName}>Genevive Mbesi, Artist</h1>
       </div>
       <Footer />
     </div>

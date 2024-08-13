@@ -55,7 +55,7 @@ export default function Navbar() {
           </li>
           <li style={headingStyle}>
             <Link to="/listings">
-              Listings
+              Price List
             </Link>
           </li>
           <li style={headingStyle}>

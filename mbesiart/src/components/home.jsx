@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import abstract from '../assets/abstarct.jpg';
 import african from '../assets/african.jpg';
 import flowergirl from '../assets/flowergirl.jpg';
@@ -16,13 +16,7 @@ import self from '../assets/self.jpg'
 import './base.css';
 
 const Home = React.forwardRef((props, ref) => {
-  const [showPrices, setShowPrices] = useState(false);
-
-  const togglePrices = () => {
-    setShowPrices(!showPrices);
-  };
-
- 
+  
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -64,40 +58,14 @@ const Home = React.forwardRef((props, ref) => {
   };
 
   
-  const itemStyle = {
-    padding: '0.2rem',
-    marginBottom: '0.2rem',
-    color: 'DarkSlateGrey',
-    cursor: 'pointer',
-    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
-    borderRadius: '10px',
-    fontFamily: 'Georgia, serif',
-    margin:'2px',
-    borderTop: '2px solid DarkSlateGrey',
-    
-  };
+ 
  
   return (
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
         
-        <h1>
-          {/* Button to toggle price display */}
-          <div style={itemStyle} onClick={togglePrices}>
-            {showPrices ? 'Hide Prices' : 'Prices'}
-          </div>
-
-          {/* Display prices when showPrices is true */}
-          {showPrices && (
-            <div style={itemStyle}>
-              <p>A3 - Ksh 1600</p>
-              <p>A4 - Ksh 600</p>
-              <p>A5 - Ksh 500</p>
-              <p>A6 - Ksh 350</p>
-            </div>
-          )}
-        </h1>
+        
           <h1 style={heading}>wall_art_heart</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
           <div className='sections-container'>
