@@ -2,7 +2,7 @@ import React from 'react';
 import assets from '../assets/designs.png';
 import { AiFillInstagram, AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import Footer from './footer';
-import { Link } from 'react-router-dom';
+
 
 const Contacts = React.forwardRef((props, ref) => {
   const bodyStyle = {
@@ -43,28 +43,10 @@ const Contacts = React.forwardRef((props, ref) => {
     alignItems: 'center',
     textAlign: 'center', 
   };
-  const itemStyle = {
-    padding: '5px',
-    marginBottom: '10px',
-    color: 'DarkSlateGrey',
-    cursor: 'pointer',
-    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
-    borderRadius: '10px',
-    margin: '3%', 
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Georgia, serif',
-    
-  };
-
+ 
   return (
     <div ref={ref}>
       <div style={bodyStyle}>
-      <h1 style={itemStyle}>
-          <Link to="/">
-            Home
-          </Link>
-        </h1>
         <img src={assets} alt='profile' className='w-80 h-30 overflow-hidden container' style={profileimage} />
         <h1 style={content}>
           To Choose From Our Endless designs<br />

@@ -4,7 +4,7 @@ import personalize from '../assets/personalize.jpg';
 import office from '../assets/office.jpg';
 import vibrance from '../assets/vibrance.jpg';
 import Footer from './footer';
-import { Link } from 'react-router-dom';
+
 
 const Services = React.forwardRef((props, ref) => {
   const bodyStyle = {
@@ -54,28 +54,10 @@ const Services = React.forwardRef((props, ref) => {
     marginBottom: '10px',
     borderBottom: '2px solid DarkSlateGrey',
   };
-  const itemStyle = {
-    padding: '5px',
-    marginBottom: '10px',
-    color: 'DarkSlateGrey',
-    cursor: 'pointer',
-    backgroundColor: 'rgba(169, 169, 169, 0.5)', 
-    borderRadius: '10px',
-    margin: '3%', 
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontFamily: 'Georgia, serif',
-  };
-
-
+ 
   return (
     <div ref={ref}>
       <div style={bodyStyle}>
-      <h1 style={itemStyle}>
-          <Link to="/">
-            Home
-          </Link>
-        </h1>
         <h1 style={heading}>What We Offer</h1>
         <div style={contentContainer}>
           <div>

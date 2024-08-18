@@ -44,6 +44,11 @@ export default function Navbar() {
           } lg:flex lg:flex-row lg:items-center flex`}
         >
           <li style={headingStyle}>
+            <Link to="/" >
+              Home
+            </Link>
+            </li>
+          <li style={headingStyle}>
             <Link to="/profile" >
               Profile
             </Link>

@@ -64,8 +64,6 @@ const Home = React.forwardRef((props, ref) => {
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
-        
-        
           <h1 style={heading}>wall_art_heart</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
           <div className='sections-container'>
