@@ -68,7 +68,6 @@ const Home = React.forwardRef((props, ref) => {
       <div style={containerStyle}>
         <div style={contentStyle}>
           <h1 style={heading}>ArtHub_Ke</h1>
-          
           <h2 style={subcontent}>Our specially designed Wall Art is created to<br />
           especially give you an in-tune feeling with your environment<br />
           whether at home, office, leisure time, or hosting special events,<br />

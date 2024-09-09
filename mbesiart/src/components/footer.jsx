@@ -23,7 +23,7 @@ const Footer = React.forwardRef((props, ref) => {
   };
 
   const navigationLinks = {
-    listStyleType: 'disc',
+    
     paddingTop: '10px',
     margin: '0',
     display: 'flex',
