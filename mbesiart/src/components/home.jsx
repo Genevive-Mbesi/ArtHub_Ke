@@ -8,6 +8,7 @@ import paint from '../assets/paint.jpg'
 import law from '../assets/law.jpg'
 import couple from '../assets/couple.jpg'
 import blessed from '../assets/blessed.jpg'
+import friends from '../assets/friends.jpg'
 
 const Home = React.forwardRef((props, ref) => {
   
@@ -104,6 +105,12 @@ const Home = React.forwardRef((props, ref) => {
                     <img src={blessed} alt='art-heart'className='rounded-lg' />
                      </div>
                      <p>Abstract Art</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                    <img src={friends} alt='art-heart'className='rounded-lg' />
+                     </div>
+                     <p>Word Art</p>
                    </h1>
                 </div>
             </div>
