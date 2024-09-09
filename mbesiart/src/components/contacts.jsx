@@ -4,7 +4,7 @@ import { AiFillInstagram, AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai';
 import Footer from './footer';
 
 
-const Contacts = React.forwardRef((props, ref) => {
+const Contacts = () => {
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
     backgroundRepeat: 'no-repeat',
@@ -45,7 +45,7 @@ const Contacts = React.forwardRef((props, ref) => {
   };
  
   return (
-    <div ref={ref}>
+    <div>
       <div style={bodyStyle}>
         <img src={assets} alt='profile' className='w-80 h-30 overflow-hidden container' style={profileimage} />
         <h1 style={content}>
@@ -72,6 +72,6 @@ const Contacts = React.forwardRef((props, ref) => {
       <Footer />
     </div>
   );
-});
+};
 
 export default Contacts;

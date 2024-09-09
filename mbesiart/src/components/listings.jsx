@@ -3,7 +3,7 @@ import Footer from './footer';
 
 import PriceList from '../assets/PriceList.png'
 
-const Listings = React.forwardRef((props, ref) => {
+const Listings = () => {
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
     backgroundRepeat: 'no-repeat',
@@ -45,7 +45,7 @@ const Listings = React.forwardRef((props, ref) => {
 
 
   return (
-    <div ref={ref}>
+    <div>
       <div style={bodyStyle}>
         <img src={PriceList} alt='Price List'style={profileimage} />
         <h1 style={subheading}>Art is a friendly way of expressing our imagination,<br></br>
@@ -56,6 +56,6 @@ const Listings = React.forwardRef((props, ref) => {
       <Footer />
     </div>
   );
-});
+};
 
 export default Listings;
