@@ -1,19 +1,13 @@
 import React from 'react';
-import abstract from '../assets/abstarct.jpg';
-import african from '../assets/african.jpg';
-import flowergirl from '../assets/flowergirl.jpg';
-import meditation from '../assets/meditation.jpg';
-import mr from '../assets/mr&mrs.jpg';
-import think from '../assets/think.jpg';
-import thorny from '../assets/thorny.jpg';
-import wild from '../assets/wild.jpg';
-import cartoon from '../assets/cartoon.jpg';
+import art from '../assets/art.jpg';
 import Services from './services';
-import crazycouple from '../assets/crazycouple.jpg'
-import flowered from '../assets/flowered.jpg'
-import self from '../assets/self.jpg'
-
 import './base.css';
+import house from '../assets/house.jpg'
+import happy from '../assets/happy.jpg'
+import paint from '../assets/paint.jpg'
+import law from '../assets/law.jpg'
+import couple from '../assets/couple.jpg'
+import blessed from '../assets/blessed.jpg'
 
 const Home = React.forwardRef((props, ref) => {
   
@@ -64,51 +58,52 @@ const Home = React.forwardRef((props, ref) => {
     <div ref={ref} style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
-          <h1 style={heading}>wall_art_heart</h1>
+          <h1 style={heading}>ArtHub_Ke</h1>
           <h1 style={subheading}>Affordable Wall Decor</h1>
           <div className='sections-container'>
                 <div className='section-links'>
                     <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={thorny} alt='art-heart' />
-                    <img src={abstract} alt='art-heart' />
+                     <img src={art} alt='art-heart' className='rounded-lg'/>
+                   
+                     </div>
+                     <p>Floral Art</p>
+                   </h1>
+                   <h1 className='section-link-card flex'>
+                    <div className='image-container'>
+                     <img src={house} alt='art-heart'className='rounded-lg' />
                      </div>
                      <p>Abstract art</p>
                    </h1>
                    <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={flowergirl} alt='art-heart' />
-                    <img src={think} alt='art-heart' />
+                     <img src={happy} alt='art-heart' className='rounded-lg'/>
                      </div>
-                     <p>Word art</p>
+                     <p>Word Art</p>
                    </h1>
                    <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={crazycouple} alt='art-heart' />
-                    <img src={mr} alt='art-heart' />
+                    <img src={paint} alt='art-heart'className='rounded-lg' />
                      </div>
-                     <p>Couples Edition</p>
+                     <p>Floral Art</p>
                    </h1>
                    <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={cartoon} alt='art-heart' />
-                    <img src={meditation} alt='art-heart' />
+                     <img src={law} alt='art-heart'className='rounded-lg'  />
                      </div>
-                     <p>Cartoon Art</p>
+                     <p>Word Art</p>
                    </h1>
                    <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={african} alt='art-heart' />
-                    <img src={wild} alt='art-heart' />
+                     <img src={couple} alt='art-heart'className='rounded-lg'  />
                      </div>
-                     <p>African Heritage</p>
+                     <p>Couple Designs</p>
                    </h1>
                    <h1 className='section-link-card flex'>
                     <div className='image-container'>
-                     <img src={flowered} alt='art-heart' />
-                    <img src={self} alt='art-heart' />
+                    <img src={blessed} alt='art-heart'className='rounded-lg' />
                      </div>
-                     <p>Flowered Abstract</p>
+                     <p>Abstract Art</p>
                    </h1>
                 </div>
             </div>

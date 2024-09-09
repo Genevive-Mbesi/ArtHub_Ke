@@ -33,7 +33,7 @@
 .section-link-card div img{
     display: inline-block;
     position: relative;
-    width: 50%;
+    width: 80%;
 }
 
 .section-link-card p:nth-child(2){
