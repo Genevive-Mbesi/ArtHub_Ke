@@ -48,11 +48,7 @@ export default function Navbar() {
               Home
             </Link>
             </li>
-          <li style={headingStyle}>
-            <Link to="/profile" >
-              Profile
-            </Link>
-          </li>
+          
           <li style={headingStyle}>
             <Link to="/services">
               Services

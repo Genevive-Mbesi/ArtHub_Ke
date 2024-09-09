@@ -45,14 +45,22 @@ const Home = React.forwardRef((props, ref) => {
   };
 
   const subheading = {
-    fontSize: 'em',
+    fontSize: '2em',
     color: 'MintCream',
     paddingTop: '10px',
     fontFamily: 'Georgia, serif',
     
   };
 
-  
+  const subcontent = {
+    paddingBottom: '10px',
+    fontWeight: '600',
+    marginBottom: '5px',
+    fontSize: '1em',
+    color: 'DarkSlateGrey',
+    fontFamily: 'Georgia, serif',
+    textAlign: 'center', 
+  };
  
  
   return (
@@ -60,7 +68,14 @@ const Home = React.forwardRef((props, ref) => {
       <div style={containerStyle}>
         <div style={contentStyle}>
           <h1 style={heading}>ArtHub_Ke</h1>
-          <h1 style={subheading}>Affordable Wall Decor</h1>
+          
+          <h2 style={subcontent}>Our specially designed Wall Art is created to<br />
+          especially give you an in-tune feeling with your environment<br />
+          whether at home, office, leisure time, or hosting special events,<br />
+          think of this as an elevator to your mood every time<br />
+          that sets the tone of the room.
+        </h2>
+        <h1 style={subheading}>Art Collections</h1>
           <div className='sections-container'>
                 <div className='section-links'>
                     <h1 className='section-link-card flex'>
