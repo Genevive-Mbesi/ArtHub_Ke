@@ -51,7 +51,7 @@ const Listings = React.forwardRef((props, ref) => {
         <h1 style={subheading}>Art is a friendly way of expressing our imagination,<br></br>
           It speaks a lot about our world and our lives.
         </h1>
-        <h1 style={myName}>Genevive Mbesi, Artist</h1>
+        <h1 style={myName}>ArtHub_Ke</h1>
       </div>
       <Footer />
     </div>

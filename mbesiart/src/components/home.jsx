@@ -10,7 +10,7 @@ import couple from '../assets/couple.jpg'
 import blessed from '../assets/blessed.jpg'
 import friends from '../assets/friends.jpg'
 
-const Home = React.forwardRef((props, ref) => {
+const Home = ()=> {
   
   const containerStyle = {
     display: 'flex',
@@ -64,7 +64,7 @@ const Home = React.forwardRef((props, ref) => {
  
  
   return (
-    <div ref={ref} style={bodyStyle}>
+    <div  style={bodyStyle}>
       <div style={containerStyle}>
         <div style={contentStyle}>
           <h1 style={heading}>ArtHub_Ke</h1>
@@ -134,6 +134,6 @@ const Home = React.forwardRef((props, ref) => {
 
       </div>
   );
-});
+};
 
 export default Home;

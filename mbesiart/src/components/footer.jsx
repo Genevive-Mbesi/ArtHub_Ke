@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillInstagram, AiFillMail } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-const Footer = React.forwardRef((props, ref) => {
+const Footer =()  => {
   const currentYear = new Date().getFullYear();
   const headingStyle = {
     backgroundColor: 'DarkSlateGrey',
@@ -49,7 +49,7 @@ const Footer = React.forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref}>
+    <div>
       <footer style={headingStyle}>
         <div style={footerContainer}>
           <div className="flex items-center gap-5 text-3xl pt-5">
@@ -87,6 +87,6 @@ const Footer = React.forwardRef((props, ref) => {
       </footer>
     </div>
   );
-});
+};
 
 export default Footer;

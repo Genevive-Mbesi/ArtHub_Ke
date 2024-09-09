@@ -6,7 +6,7 @@ import vibrance from '../assets/vibrance.jpg';
 import Footer from './footer';
 
 
-const Services = React.forwardRef((props, ref) => {
+const Services = () => {
   const bodyStyle = {
     backgroundColor: 'Gainsboro',
     backgroundRepeat: 'no-repeat',
@@ -56,7 +56,7 @@ const Services = React.forwardRef((props, ref) => {
   };
  
   return (
-    <div ref={ref}>
+    <div >
       <div style={bodyStyle}>
         <h1 style={heading}>What We Offer</h1>
         <div style={contentContainer}>
@@ -81,6 +81,6 @@ const Services = React.forwardRef((props, ref) => {
       <Footer />
     </div>
   );
-});
+};
 
 export default Services;
