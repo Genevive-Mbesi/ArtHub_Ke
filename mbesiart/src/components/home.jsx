@@ -110,7 +110,7 @@ const Home = React.forwardRef((props, ref) => {
                     <div className='image-container'>
                     <img src={friends} alt='art-heart'className='rounded-lg' />
                      </div>
-                     <p>Word Art</p>
+                     <p>Picture Art</p>
                    </h1>
                 </div>
             </div>
