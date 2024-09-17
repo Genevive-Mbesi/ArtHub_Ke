@@ -74,8 +74,9 @@ const Home = ()=> {
           think of this as an elevator to your mood every time<br />
           that sets the tone of the room.
         </h2>
-        <h1 style={subheading}>Art Collections</h1>
-          <div className='sections-container'>
+        <div className='divider'></div>
+        <h1 style={subheading} className='divider'>Art Collections</h1>
+          <div className='sections-container '>
                 <div className='section-links'>
                     <h1 className='section-link-card flex'>
                     <div className='image-container'>

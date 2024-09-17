@@ -57,7 +57,7 @@ const Contacts = () => {
           <span className='text-gray-500'>Contact us below:</span>
         </h1>
         <h2 className='flex gap-5 text-3xl pt-10' style={subcontent}>
-        <a href='https://wa.me/+254745052800' target='_blank' rel='noreferrer'> 
+        <a href='https://wa.me/+254770209753' target='_blank' rel='noreferrer'> 
 
             <AiOutlineWhatsApp />
           </a>
